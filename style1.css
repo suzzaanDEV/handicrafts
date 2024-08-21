@@ -1,0 +1,83 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Footer Styles */
+.footer {
+    background-color:  crimson; /* Crimson background */
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.footer .Ftext {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer .Ftext h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer .Ftext p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.footer .Ftext a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .Ftext a:hover {
+    color: #ffeb3b; /* Highlight color on hover */
+}
+
+.messanger {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  crimson;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.messanger i {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.messanger:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .Ftext {
+        margin: 10px 0;
+        text-align: center;
+    }
+}

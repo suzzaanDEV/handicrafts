@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9; /* Soft background color */
+    color: #333; /* Dark text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 30px auto;
+    max-width: 1200px; /* Center container and limit width */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content */
+    border-radius: 8px; /* Rounded corners for container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Message */
+.message {
+    background-color: #e7f1ff;
+    border: 1px solid #c0e0ff;
+    color: #1e70ff;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message span {
+    font-size: 16px;
+}
+
+.message i {
+    cursor: pointer;
+    font-size: 16px;
+    color: #1e70ff;
+}
+
+/* Table */
+.display-orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.display-orders th, .display-orders td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.display-orders thead {
+    background-color: #B91216; /* Matching your primary color */
+    color: #ffffff;
+}
+
+.display-orders tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.display-orders tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.display-orders td {
+    font-size: 16px;
+}
+
+.display-orders .empty {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+}
+
+/* Button Styles */
+.delete-btn {
+    color: #B91216;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #f8d7da;
+    color: #721c24;
+    transform: scale(1.05);
+}
+
+/* Input Styles */
+input[type="text"], input[type="password"], select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #B91216; /* Highlight border color on focus */
+    box-shadow: 0 0 5px rgba(185, 18, 22, 0.3); /* Subtle shadow */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        padding: 15px;
+    }
+
+    .display-orders th, .display-orders td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .delete-btn {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .display-orders th, .display-orders td {
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .delete-btn {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .display-orders th, .display-orders td {
+        padding: 6px;
+        font-size: 10px;
+        display: block;
+        text-align: left;
+    }
+
+    .display-orders td {
+        border-bottom: 1px solid #ddd;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .display-orders td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        flex-basis: 100%;
+    }
+
+    .delete-btn {
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    input[type="text"], input[type="password"], select {
+        padding: 4px;
+    }
+}

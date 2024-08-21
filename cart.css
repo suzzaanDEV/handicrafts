@@ -1,0 +1,166 @@
+
+#hero-title{
+    display: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1.heading1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+thead {
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+tbody img {
+    max-width: 120px;
+    height: auto;
+    border-radius: 8px;
+}
+
+tbody input[type="number"] {
+    width: 60px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+tbody input[type="submit"] {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+tbody input[type="submit"]:hover {
+    background-color: crimson;
+    transform: scale(1.05);
+}
+
+/* Buttons and Links */
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.option-btn, .btn, .delete-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.option-btn:hover, .btn:hover, .delete-btn:hover {
+    background-color: crimson;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: #d9534f;
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+.checkout-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+    }
+
+    thead th, tbody td {
+        padding: 10px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    h1.heading1 {
+        font-size: 28px;
+    }
+
+    tbody img {
+        max-width: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    table {
+        font-size: 12px;
+    }
+
+    tbody img {
+        max-width: 80px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1.heading1 {
+        font-size: 24px;
+    }
+}
